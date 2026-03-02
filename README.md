@@ -47,13 +47,13 @@ shaping-skills/
 │   │   ├── SKILL.md
 │   │   └── references/
 │   └── breadboard-reflection/
-│       └── SKILL.md
+│       ├── SKILL.md
+│       └── references/
 ├── hooks/
 │   ├── hooks.json
 │   └── scripts/
 │       └── shaping-ripple.sh
-└── scripts/
-    └── test-gfm.sh
+└── CHANGELOG.md
 ```
 
 ---
