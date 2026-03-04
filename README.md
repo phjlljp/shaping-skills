@@ -2,7 +2,7 @@
 
 A [Claude Code](https://claude.com/claude-code) plugin for shaping and breadboarding — the methodology from [Shape Up](https://basecamp.com/shapeup) adapted for working with an LLM.
 
-**Case study:** [Shaping 0-1 with Claude Code](https://x.com/rjs/status/2020184079350563263) walks through the full process of building a project from scratch using these skills. The source for that project is at [rjs/tick](https://github.com/rjs/tick).
+Reimplemented as a Claude Code plugin from [rjs/shaping-skills](https://github.com/rjs/shaping-skills) by [Ryan Singer](https://github.com/rjs), which used the earlier standalone skills format.
 
 ## Skills
 
@@ -17,14 +17,14 @@ A [Claude Code](https://claude.com/claude-code) plugin for shaping and breadboar
 Install as a Claude Code plugin:
 
 ```bash
-claude plugin add -- /path/to/shaping-skills
+claude plugin add -- /path/to/shapeup
 ```
 
 Or clone and install from the repo:
 
 ```bash
-git clone https://github.com/rjs/shaping-skills.git ~/.local/share/shaping-skills
-claude plugin add -- ~/.local/share/shaping-skills
+git clone https://github.com/phjlljp/shapeup.git ~/.local/share/shapeup
+claude plugin add -- ~/.local/share/shapeup
 ```
 
 ## Hook: Ripple Check
@@ -36,7 +36,7 @@ The hook is registered automatically via `hooks/hooks.json` when the plugin is i
 ## Plugin Structure
 
 ```
-shaping-skills/
+shapeup/
 ├── .claude-plugin/
 │   └── plugin.json
 ├── skills/
@@ -56,6 +56,8 @@ shaping-skills/
 └── CHANGELOG.md
 ```
 
----
+## Attribution
 
-This README was written by [Claude Code](https://claude.com/claude-code).
+The shaping and breadboarding methodology comes from [Shape Up: Stop Running in Circles and Ship Work that Matters](https://basecamp.com/shapeup) by Ryan Singer. The book is freely available online.
+
+The original skills were created by [Ryan Singer](https://github.com/rjs) as [shaping-skills](https://github.com/rjs/shaping-skills), using Claude Code's standalone skills format. This repo reimplements them as a plugin with auto-discovery, hook registration, and progressive disclosure via reference files. See Ryan's [walkthrough](https://x.com/rjs/status/2020184079350563263) of the full shaping process with Claude Code.

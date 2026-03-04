@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ## [1.0.0] — 2026-03-01
 
-Refactored from a loose collection of skills into a proper Claude Code plugin.
+Reimplemented [rjs/shaping-skills](https://github.com/rjs/shaping-skills) (standalone skills format) as a Claude Code plugin.
 
 ### Added
 - `.claude-plugin/plugin.json` manifest for auto-discovery
