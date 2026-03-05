@@ -1,0 +1,19 @@
+{
+  "name": "shapeup",
+  "description": "Skills for shaping and breadboarding — the methodology from Shape Up adapted for working with an LLM.",
+  "owner": {
+    "name": "phjlljp",
+    "url": "https://github.com/phjlljp"
+  },
+  "plugins": [
+    {
+      "name": "shapeup",
+      "description": "Skills for shaping and breadboarding — the methodology from Shape Up adapted for working with an LLM.",
+      "version": "1.0.0",
+      "source": "./",
+      "author": {
+        "name": "phjlljp"
+      }
+    }
+  ]
+}

@@ -14,18 +14,26 @@ Reimplemented as a Claude Code plugin from [rjs/shaping-skills](https://github.c
 
 ## Install
 
-Install as a Claude Code plugin:
+### From GitHub
+
+Add the repo as a marketplace, then install the plugin:
 
 ```bash
-claude plugin add -- /path/to/shapeup
+claude plugin marketplace add phjlljp/shapeup
+claude plugin install shapeup
 ```
 
-Or clone and install from the repo:
+### Local development
+
+Clone the repo and add it as a local marketplace:
 
 ```bash
-git clone https://github.com/phjlljp/shapeup.git ~/.local/share/shapeup
-claude plugin add -- ~/.local/share/shapeup
+git clone https://github.com/phjlljp/shapeup.git
+claude plugin marketplace add /path/to/shapeup
+claude plugin install shapeup
 ```
+
+Changes you make locally will take effect the next time you start Claude Code.
 
 ## Hook: Ripple Check
 
